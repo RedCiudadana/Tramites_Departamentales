@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="es-ES">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="Red Ciudadana" />
+
+	<link rel="icon" href="/redciudadana.png" type="image/png">
+
+	<!-- Stylesheets
+	============================================= -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="/css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="/css/maingrid.css" type="text/css" />
+
+	<link rel="stylesheet" href="/css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="/css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="/css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="/css/magnific-popup.css" type="text/css" />
+
+	<link rel="stylesheet" href="/css/custom.css" type="text/css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<link rel="stylesheet" href="/css/colors.php?color=F9BE79" type="text/css" />
+
+	<!-- / -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+
+    {% block head %}
+    {% endblock %}
+
+</head>
+
+<body class="stretched search-overlay">
+	<!-- Preloader Start -->
+	<div id="preloader-active">
+		<div class="preloader d-flex align-items-center justify-content-center">
+			<div class="preloader-inner position-relative">
+				<div class="text-center">
+					<img src="/loader.gif" style="width:50%;height:auto;margin:auto" alt="" />
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="full-header header-size-md" data-mobile-sticky="true">
+			<div id="header-wrap" style="background:#E86762">
+				<div class="container px-6 py-2 p-0-responsive">				
+					<div class="header-row justify-content-lg-between">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="/index.html" class="standard-logo"><img style="padding:5%" src="/img/header/RED.png" alt="Logo"></a>
+							<a href="/index.html" class="retina-logo"><img style="padding:5%" src="/img/header/RED.png" alt="Logo"></a>
+						</div><!-- #logo end -->
+
+						<button class="menu_bars px-2" onclick='menu()'><i class="fa fa-bars text-white" style="font-size:25px"></i></button>
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+
+							<ul id="menu-container" class="menu-container">
+								<li class="menu-item text-white"><a class="menu-link transition1" href="/index.html">Inicio</a></li>
+							</ul>
+
+							
+							<div class="d-flex redes f-right">
+								<a target="_blank" class="transition1" href="https://www.facebook.com/Redciudadanagt"><i class="fab fa-facebook-f"></i></a>
+								<a target="_blank" class="transition1" href="https://twitter.com/redxguate"><i class="fab fa-twitter "></i></a>
+								<a target="_blank" class="transition1" href="https://www.instagram.com/redxguate/"><i class="fab fa-instagram "></i></a>
+								<a target="_blank" class="transition1" href="https://www.youtube.com/channel/UCQwc62j7beStZYFzwPxBEQg"><i class="fab fa-youtube"></i></a>
+							</div>
+
+						</nav><!-- #primary-menu end -->
+
+						
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+		
+		{% block content %}
+
+        {% endblock %} 
+
+		<!-- Footer
+		============================================= -->
+
+		<!-- footer-area-start -->
+        <footer>
+            <div class="footer-middle-area pt-80 pb-25" style="background-image:url(/img/footer/03.png);   ">
+                <div class="container">
+                    <div class="row" style="justify-content:space-between">
+                        <div class="col-xl-4 col-lg-4 col-md-4">
+                            <div class="footer-wrapper mb-30">
+                                <div class="footer-logo">
+                                    <a target="_blank" href="https://redciudadana.org/"><img src="/img/footer/LOGO-RED_BLANCO.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-3 col-md-3 col-sm-9">
+                            <div class="d-flex align-items-center justify-content-end">
+                                <a target="_blank" style="margin:0 3px" href="https://www.facebook.com/Redciudadanagt"><img src="img/footer/REDES-27.png"></a>
+                                <a target="_blank" style="margin:0 3px" href="https://twitter.com/redxguate"><img src="/img/footer/REDES-28.png"></a>
+                                <a target="_blank" style="margin:0 3px" href="https://www.instagram.com/redxguate/"><img src="/img/footer/REDES-29.png"></a>
+                                <a target="_blank" style="margin:0 3px" href="https://www.youtube.com/channel/UCQwc62j7beStZYFzwPxBEQg"><img src="/img/footer/REDES-30.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-40 mb-40">
+                        <div class="col-xl-12 col-lg-12 col-md-12">
+                            <img src="/img/footer/09.png">
+                        </div>
+                    </div>
+                    <div class="footer-bottom-area pt-25 mt-45" style="border-top:none">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="copyright text-center">
+                                    <a href="https://redciudadana.org/"><p style="color:#fff!important"><!--i class="far fa-copyright"></i> 2020 <a href="#">Fundee.</a--> Asociación Civil Red Ciudadana</p></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </img/footer>
+        <!-- footer-area-end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="/js/jquery.js"></script>
+	<script src="/js/plugins.min.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="/js/functions.js"></script>
+
+	<script type="text/javascript">
+		function menu() {
+			menu_div = document.getElementById("menu-container");
+			if( menu_div.style.display == "none"){
+				menu_div.style.display = "block";
+			}
+			else if(menu_div.style.display == "block"){
+				menu_div.style.display = "none";
+			}
+			else{
+				menu_div.style.display = "block";
+			}
+		}
+	</script>
+
+
+
+	<script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.href = '/admin/';
+            });
+          }
+        });
+      }
+    </script>
+	<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+	<script>
+		(function ($) {
+			("use strict");
+			// Page loading
+			$(window).on("load", function () {
+				$("#preloader-active").delay(450).fadeOut("slow");
+				$("body").delay(450).css({
+					overflow: "visible"
+				});
+				$("#onloadModal").modal("show");
+			});
+		
+		})(jQuery);
+	</script>
+
+	
+
+    {% block body_javascripts %}
+
+    {% endblock %}
+
+	</body>
+</html>

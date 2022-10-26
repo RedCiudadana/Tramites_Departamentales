@@ -1,0 +1,23 @@
+{
+  "name": "tramites_departamentales",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedCiudadana/Tramites_Departamentales.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedCiudadana/Tramites_Departamentales/issues"
+  },
+  "homepage": "https://github.com/RedCiudadana/Tramites_Departamentales#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.2"
+  }
+}
