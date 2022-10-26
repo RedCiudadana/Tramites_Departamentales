@@ -3,9 +3,8 @@ backend:
   branch: main
 
 # publish_mode: editorial_workflow
-media_folder: "img/cms" # Media files will be stored in the repo under src/assets/images/posts
-public_folder: "/img/cms" # The src attribute for uploaded media will begin with assets/images/posts
-
+media_folder: "img/cms"
+public_folder: "/img/cms"
 collections:
   - name: "tramites" # Used in routes, e.g., /admin/collections/blog
     label: "Trámites" # Used in the UI
