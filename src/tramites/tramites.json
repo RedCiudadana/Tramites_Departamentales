@@ -1,0 +1,4 @@
+{
+    "tags": "tramites",
+    "permalink": "tramite/{{ page.fileSlug }}/index.html"
+}

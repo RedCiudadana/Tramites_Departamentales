@@ -7,27 +7,14 @@ media_folder: "img/cms" # Media files will be stored in the repo under src/asset
 public_folder: "/img/cms" # The src attribute for uploaded media will begin with assets/images/posts
 
 collections:
-  - name: "novedades" # Used in routes, e.g., /admin/collections/blog
-    label: "Novedades" # Used in the UI
-    folder: "src/novedades" # The path to the folder where the documents are stored
+  - name: "tramites" # Used in routes, e.g., /admin/collections/blog
+    label: "Trámites" # Used in the UI
+    folder: "src/tramites" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
-      - { name: "title", label: "Title" }
-      - { label: "Image", name: "image", widget: "image" }
-      - { name: "description", label: "Description" }
-      - { name: "autor", label: "Autor" }
-      - { name: "correo", label: "Correo" }
-      - { name: "date", label: "Date", widget: "datetime" }
-      - { name: "body", label: "Body", widget: "markdown" }
-      - {
-          name: "highlight",
-          label: "Highlight",
-          widget: "boolean",
-          default: false,
-          hint: "Display posts in home's highlights",
-        }
+      - { name: "title", label: "Nombre del Trámite" }
 
 show_preview_links: true
