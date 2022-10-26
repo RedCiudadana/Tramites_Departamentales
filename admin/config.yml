@@ -7,13 +7,13 @@ media_folder: "img/cms"
 public_folder: "/img/cms"
 collections:
   - name: "tramites" # Used in routes, e.g., /admin/collections/blog
-    label: "Trámites" # Used in the UI
+    label: "Tramites" # Used in the UI
     folder: "src/tramites" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     editor:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
-      - { name: "title", label: "Nombre del Trámite" }
+      - { name: "title", label: "Nombre del Tramite" }
 
 show_preview_links: true
