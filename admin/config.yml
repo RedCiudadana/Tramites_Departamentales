@@ -3,8 +3,8 @@ backend:
   branch: main
 
 # publish_mode: editorial_workflow
-media_folder: "img/cms"
-public_folder: "/img/cms"
+media_folder: "images_cms"
+public_folder: "/images_cms"
 collections:
   - name: "tramites" # Used in routes, e.g., /admin/collections/blog
     label: "Tramites" # Used in the UI
@@ -14,6 +14,38 @@ collections:
     editor:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
-      - { name: "title", label: "Nombre del Tramite" }
+      - { name: "title", label: "Nombre del Trámite" }
+      - { name: "id", label: "Id del Trámite", widget: "string" }
+      - { name: "departamento", label: "Departamento", widget: "string" }
+      - { name: "municipalidad", label: "Municipalidad", widget: "string" }
+      - { name: "categoria", label: "Categoría", widget: "string" }
+      - { name: "subcategoria", label: "Subcategoría", widget: "string" }
+      - { name: "descripcion", label: "Descripción", widget: "markdown" }
+      - { name: "instrucciones", label: "Instrucciones", widget: "markdown" }
+      - { name: "requisitos", label: "Requisitos", widget: "markdown" }
+      - { name: "costo", label: "Costo", widget: "number" }
+      - {
+          name: "tipo_moneda ",
+          label: "Tipo de Moneda",
+          widget: "list",
+          default: ["Q", "$"],
+        }
+      - {
+          name: "tiempo_de_respuesta ",
+          label: "Tiempo de Respuesta",
+          widget: "string",
+        }
+      - {
+          name: "documento_obtenible ",
+          label: "Documento Obtenible",
+          widget: "string",
+        }
+      - { name: "enlace", label: "enlace", widget: "string" }
+      - { name: "respaldo legal", label: "Respaldo Legal", widget: "string" }
+      - {
+          name: "fecha_actualizado",
+          label: "Fecha de Actualización",
+          widget: "datetime",
+        }
 
 show_preview_links: true
