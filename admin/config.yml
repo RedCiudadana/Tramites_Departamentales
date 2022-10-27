@@ -3,8 +3,8 @@ backend:
   branch: main
 
 # publish_mode: editorial_workflow
-media_folder: "images_cms"
-public_folder: "/images_cms"
+media_folder: "img/uploads"
+public_folder: "/img/uploads"
 collections:
   - name: "tramites" # Used in routes, e.g., /admin/collections/blog
     label: "Tramites" # Used in the UI
