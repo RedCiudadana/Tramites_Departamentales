@@ -23,27 +23,33 @@ collections:
           widget: "select",
           options: ["Quiche", "Huehuetenango", "Alta Verapaz", "Guatemala"],
         }
-      - label: "municipalidad"
-        name: "Municipalidad"
-        widget: "relation"
-        collection: "municipalidades"
-        search_fields: ["title"]
-        value_field: "title"
-        display_fields: ["title"]
-      - label: "categoria"
-        name: "Categoría"
-        widget: "relation"
-        collection: "categorias"
-        search_fields: ["title"]
-        value_field: "title"
-        display_fields: ["title"]
-      - label: "subcategorias"
-        name: "Subcategoría"
-        widget: "relation"
-        collection: "subcategorias"
-        search_fields: ["title"]
-        value_field: "title"
-        display_fields: ["title"]
+      - {
+          label: "municipalidad",
+          name: "Municipalidad",
+          widget: "relation",
+          collection: "municipalidades",
+          search_fields: ["title"],
+          value_field: "title",
+          multiple: false,
+        }
+      - {
+          label: "categoria",
+          name: "Categoría",
+          widget: "relation",
+          collection: "categorias",
+          search_fields: ["title"],
+          value_field: "title",
+          multiple: false,
+        }
+      - {
+          label: "subcategorias",
+          name: "Subcategoría",
+          widget: "relation",
+          collection: "subcategorias",
+          search_fields: ["title"],
+          value_field: "title",
+          multiple: false,
+        }
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
       - { name: "instrucciones", label: "Instrucciones", widget: "markdown" }
       - { name: "requisitos", label: "Requisitos", widget: "markdown" }
