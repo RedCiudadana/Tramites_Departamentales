@@ -30,8 +30,20 @@ collections:
         search_fields: ["title"]
         value_field: "title"
         display_fields: ["title"]
-      - { name: "categoria", label: "Categoría", widget: "string" }
-      - { name: "subcategoria", label: "Subcategoría", widget: "string" }
+      - label: "categoria"
+        name: "Categoría"
+        widget: "relation"
+        collection: "categorias"
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
+      - label: "subcategorias"
+        name: "Subcategoría"
+        widget: "relation"
+        collection: "subcategorias"
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
       - { name: "instrucciones", label: "Instrucciones", widget: "markdown" }
       - { name: "requisitos", label: "Requisitos", widget: "markdown" }
