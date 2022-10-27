@@ -5,6 +5,7 @@ backend:
 # publish_mode: editorial_workflow
 media_folder: "img/uploads"
 public_folder: "/img/uploads"
+
 collections:
   - name: "tramites" # Used in routes, e.g., /admin/collections/blog
     label: "Tramites" # Used in the UI
@@ -47,5 +48,3 @@ collections:
           label: "Fecha de Actualización",
           widget: "datetime",
         }
-
-show_preview_links: true
