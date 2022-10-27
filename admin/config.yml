@@ -27,8 +27,8 @@ collections:
       - {
           name: "tipo_moneda ",
           label: "Tipo de Moneda",
-          widget: "list",
-          default: ["Q", "$"],
+          widget: "select",
+          options: ["Q", "$"],
         }
       - {
           name: "tiempo_de_respuesta ",
