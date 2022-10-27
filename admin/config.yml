@@ -17,7 +17,12 @@ collections:
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Nombre del Trámite" }
       - { name: "id", label: "Id del Trámite", widget: "string" }
-      - { name: "departamento", label: "Departamento", widget: "string" }
+      - {
+          name: "departamento",
+          label: "Departamento",
+          widget: "select",
+          options: ["Quiche", "Huehuetenango", "Alta Verapaz", "Guatemala"],
+        }
       - { name: "municipalidad", label: "Municipalidad", widget: "string" }
       - { name: "categoria", label: "Categoría", widget: "string" }
       - { name: "subcategoria", label: "Subcategoría", widget: "string" }
