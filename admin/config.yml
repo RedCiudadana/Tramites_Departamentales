@@ -23,7 +23,13 @@ collections:
           widget: "select",
           options: ["Quiche", "Huehuetenango", "Alta Verapaz", "Guatemala"],
         }
-      - { name: "municipalidad", label: "Municipalidad", widget: "string" }
+      - label: "municipalidad"
+        name: "Municipalidad"
+        widget: "relation"
+        collection: "municipalidades"
+        search_fields: ["title"]
+        value_field: "title"
+        display_fields: ["title"]
       - { name: "categoria", label: "Categoría", widget: "string" }
       - { name: "subcategoria", label: "Subcategoría", widget: "string" }
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
@@ -53,3 +59,39 @@ collections:
           label: "Fecha de Actualización",
           widget: "datetime",
         }
+  - name: "municipalidades" # Used in routes, e.g., /admin/collections/blog
+    label: "Municipalidades" # Used in the UI
+    folder: "src/municipalidades" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Municipalidad" }
+      - { name: "direccion", label: "Dirección" }
+      - { name: "horario", label: "Horario de Atención" }
+      - { name: "dias_abiertos", label: "Días Abiertos" }
+      - { name: "pagina_web", label: "Página Web" }
+      - { name: "corrreo_electronico", label: "Correo Electrónico" }
+      - { name: "facebook", label: "Facebook" }
+      - { name: "twitter", label: "Twitter" }
+  - name: "categorias" # Used in routes, e.g., /admin/collections/blog
+    label: "Categorias" # Used in the UI
+    folder: "src/categorias" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Categoría" }
+      - { name: "descripcion", label: "Descripción", widget: "markdown" }
+  - name: "subcategorias" # Used in routes, e.g., /admin/collections/blog
+    label: "Subcategorias" # Used in the UI
+    folder: "src/subcategorias" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Subcategoría" }
+      - { name: "descripcion", label: "Descripción", widget: "markdown" }
