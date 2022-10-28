@@ -3,8 +3,9 @@ module.exports = function (eleventyConfig) {
     
     eleventyConfig.addPassthroughCopy('src');
     eleventyConfig.addPassthroughCopy('css');
-    eleventyConfig.addPassthroughCopy('img');
+    eleventyConfig.addPassthroughCopy('imgs');
     eleventyConfig.addPassthroughCopy('js');
+    eleventyConfig.addPassthroughCopy('assets');
     eleventyConfig.addPassthroughCopy('admin');
 
     eleventyConfig.addNunjucksFilter("limit", function (array, limit) {
