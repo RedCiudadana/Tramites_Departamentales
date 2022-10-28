@@ -1,0 +1,4 @@
+{
+    "tags": "subcategorias",
+    "permalink": "subcategoria/{{ page.fileSlug }}/index.html"
+}
