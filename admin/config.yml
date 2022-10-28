@@ -20,8 +20,11 @@ collections:
       - {
           name: "departamento",
           label: "Departamento",
-          widget: "select",
-          options: ["Quiche", "Huehuetenango", "Alta Verapaz", "Guatemala"],
+          widget: "relation",
+          collection: "departamentos",
+          search_fields: ["title"],
+          value_field: "title",
+          multiple: false,
         }
       - {
           label: "municipalidad",
@@ -77,6 +80,16 @@ collections:
           label: "Fecha de Actualización",
           widget: "datetime",
         }
+  - name: "departamentos" # Used in routes, e.g., /admin/collections/blog
+    label: "Departamentos" # Used in the UI
+    folder: "src/departamentos" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: false # Disable the editor preview and use instead 'preview links'
+    fields: # The fields for each document, usually in front matter
+      - { name: "title", label: "Departamento" }
+      - { name: "descripcion", label: "Descripción", widget: "markdown" }
   - name: "municipalidades" # Used in routes, e.g., /admin/collections/blog
     label: "Municipalidades" # Used in the UI
     folder: "src/municipalidades" # The path to the folder where the documents are stored
