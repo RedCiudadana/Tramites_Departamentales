@@ -37,6 +37,21 @@ TABLE CONTENT
 @import url(plugins/slick.css);
 @import url(plugins/perfect-scrollbar.css);
 
+@font-face {
+  font-family: "titulos-bold";
+  src: url('/assets/fonts/uicons/red/titulos/Sora-Bold.ttf');
+}
+
+@font-face {
+  font-family: "titulos-semibold";
+  src: url('/assets/fonts/uicons/red/titulos/Sora-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: "titulos-regular";
+  src: url('/assets/fonts/uicons/red/titulos/Sora-Regular.ttf');
+}
+
 /*RESET*/
 html,
 body,
@@ -830,8 +845,8 @@ h6,
 .display-1,
 .display-2,
 .heading-sm-1 {
-  font-family: "Quicksand", sans-serif;
-  color: #253D4E;
+  font-family: "titulos-bold", sans-serif;
+  color: #1c1d1a;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -3537,7 +3552,7 @@ table .product-thumbnail img {
 }
 
 .banner-left-icon .banner-text p {
-  margin-bottom: 0;
+  
   color: #adadad;
 }
 
@@ -3593,7 +3608,7 @@ table .product-thumbnail img {
 .banner-img .banner-text h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  min-height: 100px;
+  min-height: 30px;
 }
 
 .banner-img .banner-text:hover h4 {
@@ -13208,4 +13223,71 @@ footer .hotline img {
   list-style:decimal!important;
   margin-left: 15px;
   margin-bottom: 20px;
+}
+
+.new_banners{
+  background-color: #bfeefb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.new_banners img{
+  width: 140px;
+  height: auto;
+}
+
+.cuadros-municipales{
+  background-color: #fff;
+  transition: 0.5s;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  margin-bottom: 20px;
+}
+
+.cuadros-municipales img{
+  width: 120px;
+  height: auto;
+  margin: 0 20px;
+}
+
+.cuadros-municipales:hover{
+  background-color: #fd734b;
+}
+
+.cuadros-cats{
+  background-color: #fff;
+  transition: 0.5s;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px;
+  border: 0.5px solid #e3ebf5;
+  margin-bottom: 20px;
+}
+
+.cuadros-cats:hover{
+  background-color: #fd734b;
+  border: 0.5px solid #fd734b;
+}
+
+.cuadros-cats:hover > div > p{
+  color: #253D4E;
+}
+
+.cuadros-cats div{
+  transition: 0.5s;
+}
+
+.cuadros-cats img{
+  width: 120px;
+  height: auto;
+  margin: 0 20px;
 }
