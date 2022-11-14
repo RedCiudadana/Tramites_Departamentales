@@ -27,8 +27,8 @@ collections:
           multiple: false,
         }
       - {
-          label: "municipalidad",
-          name: "Municipalidad",
+          label: "Municipalidad",
+          name: "municipalidad",
           widget: "relation",
           collection: "municipalidades",
           search_fields: ["title"],
@@ -36,8 +36,8 @@ collections:
           multiple: false,
         }
       - {
-          label: "categoria",
-          name: "Categoría",
+          label: "Categoria",
+          name: "categoría",
           widget: "relation",
           collection: "categorias",
           search_fields: ["title"],
@@ -45,8 +45,8 @@ collections:
           multiple: false,
         }
       - {
-          label: "subcategorias",
-          name: "Subcategoría",
+          label: "Subcategorias",
+          name: "subcategoría",
           widget: "relation",
           collection: "subcategorias",
           search_fields: ["title"],
@@ -99,6 +99,7 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Municipalidad" }
+      - { name: "descripcion", label: "Descripción", widget: "markdown" }
       - { name: "direccion", label: "Dirección" }
       - { name: "horario", label: "Horario de Atención" }
       - { name: "dias_abiertos", label: "Días Abiertos" }

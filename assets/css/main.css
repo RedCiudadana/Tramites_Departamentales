@@ -1155,7 +1155,7 @@ h5.widget-title {
 }
 
 .btn:hover {
-  color: #fff;
+  color: #fff!important;
 }
 
 .btn-shadow-brand {
@@ -1246,6 +1246,7 @@ button[type='submit']:hover {
 .btn:hover,
 .button:hover {
   background-color: #fc724b;
+  color: #fff!important;
 }
 
 .btn.btn-sm,
@@ -3688,6 +3689,7 @@ table .product-thumbnail img {
 
 .banner-big .btn:hover {
   background: #FDC040 !important;
+  color: #fff!important;
 }
 
 /*Deal banners*/
@@ -13290,4 +13292,10 @@ footer .hotline img {
   width: 120px;
   height: auto;
   margin: 0 20px;
+}
+
+.img-header{
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
 }
