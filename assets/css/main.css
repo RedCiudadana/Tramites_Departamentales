@@ -223,7 +223,7 @@ a {
 }
 
 a:hover {
-  color: #FDC040;
+  color: #fc724b!important;
 }
 
 li.hr span {
@@ -1189,17 +1189,17 @@ button[type='submit'] {
   color: #ffffff;
   border: none;
   background-color: #232830;
-  border: 1px solid #7fb2ec;
+  border: 1px solid #fc724b;
   border-radius: 10px;
 }
 
 button.submit:hover,
 button[type='submit']:hover {
-  background-color: #7fb2ec !important;
+  background-color: #fc724b !important;
 }
 
 .btn-brand:hover {
-  background-color: #7fb2ec !important;
+  background-color: #fc724b !important;
 }
 
 .btn-login {
@@ -1245,7 +1245,7 @@ button[type='submit']:hover {
 
 .btn:hover,
 .button:hover {
-  background-color: #7fb2ec;
+  background-color: #fc724b;
 }
 
 .btn.btn-sm,
@@ -5224,7 +5224,7 @@ table .product-thumbnail img {
 }
 
 .detail-qty>a:hover {
-  color: #7fb2ec;
+  color: #fc724b;
 }
 
 .detail-qty>a.qty-up {
@@ -6552,7 +6552,7 @@ h6.post-title {
 }
 
 .invoice-content .btn-download:after {
-  background: #7fb2ec;
+  background: #fc724b;
 }
 
 .invoice-content .btn-print {
@@ -7030,7 +7030,7 @@ h6.post-title {
 }
 
 .vendor-wrap .product-badges.product-badges-position span.hot {
-  background-color: #7fb2ec;
+  background-color: #fc724b;
 }
 
 .vendor-wrap .product-badges.product-badges-position span.new {
@@ -8582,7 +8582,7 @@ h6.post-title {
 }
 
 .header-style-1 .main-categori-wrap>a:hover {
-  background-color: #7fb2ec;
+  background-color: #fc724b;
 }
 
 .header-style-1 .main-menu.main-menu-light-white>nav>ul>li>a {
@@ -9895,7 +9895,7 @@ footer .hotline img {
 }
 
 .footer-bottom {
-  border-top: 1px solid #7fb2ec;
+  border-top: 1px solid #fc724b;
 }
 
 #scrollUp {
@@ -13216,7 +13216,7 @@ footer .hotline img {
 }
 
 .search_button:hover{
-  background-color: #7fb2ec!important;
+  background-color: #fc724b!important;
 }
 
 .texto-servicio ol{
