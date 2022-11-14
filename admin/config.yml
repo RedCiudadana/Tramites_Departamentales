@@ -125,4 +125,13 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Subcategoría" }
+      - {
+          label: "Categoría",
+          name: "categoria",
+          widget: "relation",
+          collection: "categorias",
+          search_fields: ["title"],
+          value_field: "title",
+          multiple: false,
+        }
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
