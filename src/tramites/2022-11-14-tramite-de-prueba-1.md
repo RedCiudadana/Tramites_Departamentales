@@ -2,9 +2,9 @@
 title: Tramite de prueba 1
 id: "123"
 departamento: Alta Verapaz
-Municipalidad: Cobán
-Categoría: Salud
-Subcategoría: Covid
+municipalidad: Cobán
+categoria: Salud
+subcategoria: Covid
 descripcion: e﻿l tramite es de prueba de covid
 instrucciones: i﻿ntrucciones aca
 requisitos: r﻿equisitos aca
@@ -15,4 +15,7 @@ costo: 67
 enlace: enlace
 respaldo legal: repaldo
 fecha_actualizado: 2022-11-14T17:06:38.767Z
+Categoría: Salud
+Subcategoría: Covid
+Municipalidad: Cobán
 ---
