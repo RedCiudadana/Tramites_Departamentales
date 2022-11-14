@@ -37,7 +37,7 @@ collections:
         }
       - {
           label: "Categoria",
-          name: "categoría",
+          name: "categoria",
           widget: "relation",
           collection: "categorias",
           search_fields: ["title"],
@@ -46,7 +46,7 @@ collections:
         }
       - {
           label: "Subcategorias",
-          name: "subcategoría",
+          name: "subcategoria",
           widget: "relation",
           collection: "subcategorias",
           search_fields: ["title"],
