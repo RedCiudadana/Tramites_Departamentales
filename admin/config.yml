@@ -99,6 +99,7 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Municipalidad" }
+      - { name: "icono", label: "Icono de Categoría", widget: "image" }
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
       - { name: "direccion", label: "Dirección" }
       - { name: "horario", label: "Horario de Atención" }
@@ -116,6 +117,7 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Categoría" }
+      - { name: "icono", label: "Icono de Municipio", widget: "image" }
       - { name: "descripcion", label: "Descripción", widget: "markdown" }
   - name: "subcategorias" # Used in routes, e.g., /admin/collections/blog
     label: "Subcategorias" # Used in the UI
@@ -126,6 +128,7 @@ collections:
       preview: false # Disable the editor preview and use instead 'preview links'
     fields: # The fields for each document, usually in front matter
       - { name: "title", label: "Subcategoría" }
+      - { name: "icono", label: "Icono de Subcategoría", widget: "image" }
       - {
           label: "Categoría",
           name: "categoria",
