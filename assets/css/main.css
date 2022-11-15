@@ -13299,3 +13299,7 @@ footer .hotline img {
   height: auto;
   margin-top: 20px;
 }
+
+.contact_form > *{
+  margin: 5px 0;
+}
