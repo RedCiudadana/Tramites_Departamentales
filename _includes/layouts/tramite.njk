@@ -10,16 +10,16 @@
 {% endblock %}
 
 {% block content %}
-    <div class="sidebar d-flex">
+    <!--div class="sidebar d-flex">
         <div><a class="btn" href="#">Evalua</a></div>
         <div><a class="btn" href="/quejas.html">Reporta</a></div>
-    </div>
+    </div-->
     <div class="page-header breadcrumb-wrap">
         <div class="container">
             <div class="breadcrumb">
                 <a href="/index.html" rel="nofollow"><i class="fi-rs-home mr-5"></i>Inicio</a>
-                <span></span> {{categoria}}
-                <span></span> {{subcategoria}}
+                <span></span> <a href="{% for categoriac in collections.categorias %}{% if categoriac.data.title === categoria %}{{categoriac.url}}{%endif%}{%endfor%}">{{categoria}}</a>
+                <span></span> <a href="{% for subcategoriac in collections.subcategorias %}{% if subcategoriac.data.title === subcategoria %}{{subcategoriac.url}}{%endif%}{%endfor%}">{{subcategoria}}</a>
                 <span></span> {{title}}
             </div>
         </div>
@@ -35,7 +35,7 @@
                                     <h5 class="section-title style-1 mb-30">Especificaciones</h5>
                                     <ul>
                                         <li>           
-                                            <a href="{% for municipalidad in collections.municipalidades %}{% if municipalidad.data.title === municipalidad%}{{municipalidad.url}}{%endif%}{%endfor%}"> <img src="/assets/imgs/red/elementos/iconos/ICONO-20.png" alt="" />{{municipalidad}}</a>
+                                            <a href="{% for municipalidadc in collections.municipalidades %}{% if municipalidadc.data.title === municipalidad %}{{municipalidadc.url}}{%endif%}{%endfor%}"> <img src="/assets/imgs/red/elementos/iconos/ICONO-20.png" alt="" />{{municipalidad}}</a>
                                         </li>
                                         <li>
                                             <a style="pointer-events:none" href="shop-grid-right.html"> <img src="/assets/imgs/red/elementos/iconos/ICONO-25.png" alt="" />Resultado: {{documento_obtenible}}</a>
